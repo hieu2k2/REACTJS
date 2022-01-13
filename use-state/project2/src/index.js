@@ -1,21 +1,27 @@
-import React, { useEffect } from 'react';
-import {useState} from 'react';
+import React from 'react';
+import { useState , useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-function Example (){
- const [intt,setintt] = useState(0);
- return(
-   <div> 
-     <h2>gia tri : {intt}</h2>
-     <button onClick={()=>{setintt(intt +1)} } >tang  </button>
-   </div>
- )
-} 
+
+function Hello(){
+  let [giatri, setgiatri] = useState();
+  const [name,setname] = useState("");
+
+  useEffect(() => {
+    setgiatri('xin chao ban ' + name);
+  }, [name]);
+  return (
+    <div>
+      <input onChange={(e) => setname(e.target.value)} value={name}/>
+      <hr></hr> {giatri}
+    </div>
+  );
+};
 ReactDOM.render(
   <React.StrictMode>
-    <Example />
+    <Hello />
   </React.StrictMode>,
   document.getElementById('root')
 );
