@@ -1,26 +1,12 @@
 import React from 'react';
-import { useState , useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-function Hello(){
-  let [giatri, setgiatri] = useState();
-  const [name,setname] = useState("");
-
-  useEffect(() => {
-    setgiatri('xin chao ban ' + name);
-  }, [name]);
-  return (
-    <div>
-      <input onChange={(e) => setname(e.target.value)} value={name}/>
-      <hr></hr> {giatri}</div>
-  );
-};
 ReactDOM.render(
   <React.StrictMode>
-    <Hello />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
