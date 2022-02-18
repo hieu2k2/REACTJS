@@ -1,0 +1,20 @@
+[
+    {
+    "id" : 1 , 
+    "name" : "contac1",
+    "email"  :"contac1@gmail.com",
+    "so" : "0378353196"
+},
+    {
+        "id" :2 ,
+        "name" : "contac2",
+        "email"  :"contac2@gmail.com",
+        "so" : "0378354196"
+},
+    {
+        "id" :3 ,
+        "name" : "contac3",
+        "email"  :"contac3@gmail.com",
+        "so" : "0378355196"
+}
+]
