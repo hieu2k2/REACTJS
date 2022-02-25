@@ -27,8 +27,6 @@ export default function UserDetail() {
   function handleSubmit(e) {
     alert("Updated");
   }
-  function handleDelete(e) {}
-  alert("delete acc");
   return (
     <div className="container">
       <div>
@@ -41,9 +39,6 @@ export default function UserDetail() {
       </div>
       <button type="button" onClick={handleSubmit}>
         Submit
-      </button>
-      <button type="button" onClick={handleDelete}>
-        Delete
       </button>
     </div>
   );
